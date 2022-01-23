@@ -30,7 +30,8 @@ To build this project, you require:
 <img src="https://res.cloudinary.com/dgikqkoec/image/upload/v1642971241/skillsHub/onboarding_ipeedd.png" width="30%" vspace="10" hspace="10">
 <img src="https://res.cloudinary.com/dgikqkoec/image/upload/v1642971225/skillsHub/login_i8txgb.png" width="30%" vspace="10" hspace="10""><br>
 <img src="https://res.cloudinary.com/dgikqkoec/image/upload/v1642971226/skillsHub/register_globrw.png" width="30%" vspace="10" hspace="10""><br>
-<img src="https://res.cloudinary.com/dgikqkoec/image/upload/v1642971221/skillsHub/home_sfu7v9.png" width="30%" vspace="10" hspace="10""><br>
+<img src="https://res.cloudinary.com/dgikqkoec/image/upload/v1642971221/skillsHub/home_sfu7v9.png" 
+width="30%" vspace="10" hspace="10""><br>
 <img src="https://res.cloudinary.com/dgikqkoec/image/upload/v1642971355/skillsHub/homescreen_ngksxb.png" width="30%" vspace="10" hspace="10""><br>
 <img src="https://res.cloudinary.com/dgikqkoec/image/upload/v1642971364/skillsHub/details_vkfoz4.png" width="30%" vspace="10" hspace="10""><br>
 <img src="https://res.cloudinary.com/dgikqkoec/image/upload/v1642971313/skillsHub/comments_ubfcei.png" width="30%" vspace="10" hspace="10""><br>
