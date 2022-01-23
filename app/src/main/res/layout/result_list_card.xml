@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="skills"
+            type="com.words.storageapp.database.model.MiniSkillModel" />
+
+        <variable
+            name="clickListener"
+            type="com.words.storageapp.adapters.ResultListAdapter.ClickListener" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cardParentView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="26dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="3dp"
+            app:cardElevation="20dp"
+            android:layout_margin="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <!--            app:strokeColor="@color/transparent_black"-->
+            <!--            app:strokeWidth="1dp">-->
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iconImage"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="10dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_icon_person"
+                    app:civ_border_color="@color/primaryDarkColor"
+                    app:civ_border_width="1dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/fullName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="1dp"
+                    android:text="@{skills.lastName}"
+                    android:textAppearance="@style/MainText"
+                    app:layout_constraintEnd_toEndOf="@+id/iconImage"
+                    app:layout_constraintStart_toStartOf="@+id/iconImage"
+                    app:layout_constraintTop_toBottomOf="@+id/iconImage"
+                    tools:text="Oba" />
+
+                <TextView
+                    android:id="@+id/lname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{skills.firstName}"
+                    android:textAppearance="@style/MainText"
+                    app:layout_constraintEnd_toEndOf="@+id/iconImage"
+                    app:layout_constraintStart_toStartOf="@+id/iconImage"
+                    app:layout_constraintTop_toBottomOf="@+id/fullName"
+                    tools:text="Obinna" />
+
+                <TextView
+                    android:id="@+id/skillType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{skills.skill}"
+                    android:textAppearance="@style/MainText"
+                    android:textColor="@color/blue_700"
+                    app:layout_constraintEnd_toEndOf="@+id/iconImage"
+                    app:layout_constraintStart_toStartOf="@+id/iconImage"
+                    app:layout_constraintTop_toBottomOf="@+id/lname"
+                    tools:text="Plumber" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/location_on_24dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/locality"
+                    app:layout_constraintEnd_toStartOf="@+id/locality"
+                    app:layout_constraintTop_toBottomOf="@+id/skillType"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/locality"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{skills.locality}"
+                    app:layout_constraintEnd_toEndOf="@+id/skillType"
+                    app:layout_constraintStart_toStartOf="@+id/skillType"
+                    app:layout_constraintTop_toBottomOf="@+id/skillType"
+                    tools:text="Iheaka" />
+
+                <com.google.android.material.button.MaterialButton
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:onClick="@{() -> clickListener.onClick(skills)}"
+                    android:text="view"
+                    android:textAllCaps="false"
+                    android:textColor="@color/blue_900"
+                    app:cornerRadius="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/iconImage"
+                    app:layout_constraintStart_toStartOf="@+id/iconImage"
+                    app:layout_constraintTop_toBottomOf="@+id/locality"
+                    app:layout_constraintVertical_bias="1.0"
+                    app:strokeColor="@color/blue_900"
+                    app:strokeWidth="1dp" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

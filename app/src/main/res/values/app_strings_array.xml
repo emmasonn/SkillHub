@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="account_type">
+        <item>Client</item>
+        <item>Labourer</item>
+    </string-array>
+
+    <string-array name="filter_keys">
+        <item>All</item>
+        <item>Active</item>
+        <item>New</item>
+        <item>Blocked</item>
+    </string-array>
+
+    <string-array name="bank_array">
+        <item>First bank of Nigeria(FBN)</item>
+        <item>United bank for Africa(UBA)</item>
+        <item>First city Monument Bank (FCMB)</item>
+        <item>Access Bank</item>
+        <item>GTB Bank</item>
+    </string-array>
+
+    <string-array name="skills_array">
+        <item>Painter</item>
+        <item>Plumber</item>
+        <item>Carpenter</item>
+        <item>Roofing</item>
+        <item>Welder</item>
+        <item>Mason</item>
+        <item>Laborer</item>
+    </string-array>
+
+    <string-array name="distance_list">
+        <item>100</item>
+        <item>200</item>
+        <item>600</item>
+    </string-array>
+
+    <string-array name="gender_array">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+</resources>
